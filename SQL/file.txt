@@ -1,9 +1,10 @@
-Challenge 1 
+Challenge 1 : MySQL Setup and Basic Commands
     CREATE DATABASE schoolDB; --> to create a new database
     USE schoolDB; --> to switch to the schoolDB 
     SHOW DATABASES; --> to ensure schoolDB has been created
 
-Challenge 2
+
+Challenge 2 : Using and Displaying Tables
     CREATE TABLE teachers (
     id INT AUTO_INCREMENT PRIMARY KEY,
     first_name varchar(255),
@@ -13,5 +14,8 @@ Challenge 2
     Select * from teachers --> to show my table
     DESCRIBE teachers;
 
-Challenge 3
+
+Challenge 3 : Basic SELECT Statements
+    Select * from teachers --> to show my table
+    SELECT first_name, subject from teachers; --> to retrieve only first_name and subject from the table
     
