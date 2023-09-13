@@ -18,4 +18,25 @@ Challenge 2 : Using and Displaying Tables
 Challenge 3 : Basic SELECT Statements
     Select * from teachers --> to show my table
     SELECT first_name, subject from teachers; --> to retrieve only first_name and subject from the table
+
+
+Challenge 4 : Exploring JOIN Operations
+a.  SELECT teachers.first_name, students.first_name
+    FROM teachers
+    INNER JOIN students ON teachers.id = students.teacher_id;
+
+b.  SELECT * from students
+    LEFT JOIN teachers ON teachers.id=students.teacher_id;
+
+c.  SELECT teachers.first_name, teachers.last_name, teachers.id, students.first_name
+    FROM teachers
+    RIGHT JOIN students
+    ON teachers.id = students.teacher_id;
+
+d.  SELECT *
+    FROM students
+    FULL JOIN teachers
+    ON teachers.id = students.teacher_id;
+
     
+
