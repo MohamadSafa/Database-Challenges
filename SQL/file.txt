@@ -38,5 +38,31 @@ d.  SELECT *
     FULL JOIN teachers
     ON teachers.id = students.teacher_id;
 
-    
+
+Challenge 5 : Creating Tables and Designing Schema
+
+    CREATE TABLE Authors (
+    Author_ID INT PRIMARY KEY,
+    First_Name TEXT,
+    Last_Name TEXT,
+    Birth_Date DATE,
+    Nationality TEXT
+);
+
+    CREATE TABLE Publishers (
+    Publisher_ID INT PRIMARY KEY,
+    Name TEXT,
+    Founded_Date DATE,
+    Headquarters_Location TEXT
+);
+
+    CREATE TABLE Books (
+    Book_ID INT PRIMARY KEY,
+    Title VARCHAR(225),
+    Publication_Date DATE,
+    Number_of_Pages INT,
+    Publisher_ID INT,
+    FOREIGN KEY (Publisher_ID) REFERENCES Publishers(Publisher_ID)
+);
+
 
